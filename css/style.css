@@ -83,3 +83,56 @@ input::placeholder {
     font-weight: 500;
     cursor: pointer;
 }
+
+/*barre de filtre*/
+.barre-filtre {
+    display: flex;
+    margin: 20px 0px 0px 40px;
+    align-items: center;
+}
+.bouton-filtre {
+    display: flex;
+    flex-wrap: wrap;
+}
+.bouton {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+.bouton a {
+    text-decoration: none;
+    color: black;
+    font-weight: 550;
+    border-top: 2px #d9d9d9 solid;
+    border-right: 2px #d9d9d9 solid;
+    border-bottom: 2px #d9d9d9 solid;
+    border-radius: 0px 30px 30px 0px;
+    padding: 16px 15px 16px 30px;
+    text-align: center;
+}
+.bouton a:hover {
+    background-color: #DEEBFF;
+    border-bottom: #DEEBFF solid;
+    border-top: #DEEBFF solid;
+    border-right: #DEEBFF solid;
+    margin-right: -1px;
+}
+.icon {
+    background-color: #DEEBFF;
+    color: #0065FC;
+    border-radius: 100px;
+    margin-right: -20px;
+    z-index: 1;
+}
+.fa-money-bill-wave {
+    padding: 20px 18px 20px 18px;
+}
+.fa-child {
+    padding: 20px 20px 20px 20px;
+}
+.fa-heart {
+    padding: 20px 19px 20px 19px;
+}
+.fa-dog {
+    padding: 20px 18px 20px 18px;
+}
