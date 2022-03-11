@@ -179,7 +179,7 @@ input::placeholder {
     border-radius: 20px;
     margin: 40px 20px 40px 40px;
     width: 80%;
-    height: 800px;
+    height: 80%;
     padding-bottom: 40px
 }
 .box-article {
@@ -240,7 +240,7 @@ input::placeholder {
     width: 40%;
     height: 800px;
     align-items: center;
-    padding-bottom: 40px
+    padding-bottom: 33px
 }
 .titre-populaire {
     display: flex;
@@ -297,12 +297,60 @@ input::placeholder {
 
 /*bloc activite*/
 .activite {
-    margin: 0px 40px 0px 40px;
-    background-color: peru;
+    margin: 0px 40px 40px 40px;
 }
 .box-activite {
     display: flex;
     justify-content: space-around;
+}
+.box-activite h4 {
+    font-size: 14px;
+    margin: 10px 0 0 10px;
+}
+.simple {
+    width: 24%;
+}
+.double {
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+}
+.box-activite article {
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 2px 2px 8px #e2e2e2;
+}
+.box-activite a {
+    text-decoration: none;
+    color: black;
+}
+.grand {
+    height: 97%;
+}
+.simple img {
+    height: 92%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+.double {
+    height: 40%;
+    display: flex;
+}
+.double article {
+    margin-bottom: 20px;
+}
+.double img {
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+.petit {
+    height: 250px;
+}
+.haut-double {
+    margin-bottom: 100px;
 }
 
 /*footer*/
@@ -311,7 +359,7 @@ input::placeholder {
     justify-content: space-evenly;
     background-color: #f2f2f2;
     padding-top: 1%;
-    padding-bottom: 2%;
+    padding-bottom: 1%;
     margin-left: -20%;
 }
 .lien-footer {
