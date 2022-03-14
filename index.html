@@ -10,7 +10,7 @@
     <title>Dev-Booki</title>
 </head>
 
-    <body>
+    <body class="corp">
         <!--header-->
         <header>
             <nav>
@@ -32,7 +32,8 @@
                 <i class="fa-solid fa-location-dot"></i>
                 <form method="post"> 
                     <input type="search" name="champ-recherche" placeholder="Marseille, France" required id="champ-recherche">
-                    <input type="submit" name="envoi-recherche" value="Rechercher" id="bouton-recherche">
+                    <input type="submit" name="envoi-recherche" value="Rechercher" class="bouton-recherche">
+                    <button type="submit" class="loupe"><i class="fas fa-search"></i></button>
                 </form>
             </div>
 
@@ -168,9 +169,11 @@
                             </article>
                         </a>
                     </div>
-                    <a href="#" id="affiche-plus">
-                        <h3>Afficher plus</h3>
-                    </a>       
+                    <div class="aff-plus">
+                        <a href="#">
+                            <h3>Afficher plus</h3>
+                        </a>
+                    </div>       
                 </div>
 
                 <!--section les plus populaires-->  
@@ -202,7 +205,7 @@
                                 <div class="info-popu">
                                     <h4>Au coeur de l'eau Chambre d'hôtes</h4>
                                     <p>Nuit à partir de 71<strong>€</strong></p>
-                                    <div class="note-popu">
+                                    <div class="note-popu" id="note-au-coeur">
                                         <i class="fas fa-star full_star"></i>
                                         <i class="fas fa-star full_star"></i>
                                         <i class="fas fa-star full_star"></i>

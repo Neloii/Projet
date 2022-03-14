@@ -1,7 +1,9 @@
 body {
     font-family:'Raleway', sans-serif;
     margin: 0px;
-    min-width: 320px;
+    min-width: 160px;
+    /*max-width: 1400px;
+    margin: auto;*/
 }
 
 /*header*/
@@ -73,7 +75,7 @@ input::placeholder {
     font-weight: 500;
     font-size: 20px;
 }
-#bouton-recherche {
+.bouton-recherche {
     background-color: #0065fc;
     padding: 16px 20px 16px 20px;
     font-size: 20px;
@@ -84,6 +86,9 @@ input::placeholder {
     font-weight: 500;
     cursor: pointer;
     font-family:'Raleway', sans-serif;
+}
+.loupe {
+    display: none;
 }
 
 /*barre de filtre*/
@@ -191,7 +196,7 @@ input::placeholder {
 }
 .box-article a {
     text-decoration: none;
-    border: 2px solid #ffffff;
+
     box-shadow: 2px 2px 5px #e2e2e2;
     border-radius: 20px;
     width: 30%;
@@ -227,9 +232,12 @@ input::placeholder {
 .empty_star {
     color: #d9d9d9;
 }
-#affiche-plus {
+.aff-plus a {
     text-decoration: none;
     color: black;
+}
+.aff-plus a:hover {
+    color: #0065fc solid;
 }
 
 /*section les plus populaire*/
@@ -245,9 +253,7 @@ input::placeholder {
 .titre-populaire {
     display: flex;
     align-items: center;
-}
-.titre-populaire h2 {
-    margin-right: 35%
+    justify-content: space-between;
 }
 .fa-arrow-trend-up {
     font-size: 25px;
@@ -256,6 +262,7 @@ input::placeholder {
     height: 20px;
     padding-left: 2px;
     padding-bottom: 2px;
+    margin-right: 20%;
 }
 .box-populaire {
     display: block;
@@ -314,6 +321,7 @@ input::placeholder {
     width: 24%;
     display: flex;
     flex-direction: column;
+    height: 40%;
 }
 .box-activite article {
     border-radius: 20px;
@@ -333,10 +341,6 @@ input::placeholder {
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
-.double {
-    height: 40%;
-    display: flex;
-}
 .double article {
     margin-bottom: 20px;
 }
@@ -350,7 +354,7 @@ input::placeholder {
     height: 250px;
 }
 .haut-double {
-    margin-bottom: 100px;
+    margin-bottom: 120px;
 }
 
 /*footer*/
@@ -358,9 +362,6 @@ input::placeholder {
     display: flex;
     justify-content: space-evenly;
     background-color: #f2f2f2;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    margin-left: -20%;
 }
 .lien-footer {
     list-style: none;
@@ -371,4 +372,125 @@ input::placeholder {
     border: #f2f2f2 solid;
     display: flex;
     flex-direction: column;
+}
+
+/*responsive*/
+@media all and (max-width : 1024px) {
+body {
+    width: auto;
+}
+
+/*header*/
+nav {
+    flex-direction: column;
+}
+nav ul {
+    padding-left: 0;
+}
+
+/*main*/
+
+/*barre de recherche*/
+.barre-recherche {
+    margin-left: 20px;
+}
+.bouton-recherche {
+    display: none;
+}
+.loupe {
+    display: contents;
+    cursor: pointer;
+}
+.loupe i {
+    background-color: #0065fc;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    padding: 16px 20px 16px 20px;
+    border-radius: 0 20px 20px 0;
+}
+
+/*barre de filtre*/
+.barre-filtre {
+    display: block;
+}
+.bouton-filtre {
+    flex-direction: column;
+}
+
+/*bloc hebergements - les plus populaires*/
+.heber-popu {
+    flex-direction: column;
+}
+
+/*section hebergements*/
+.heber {
+    width: auto;
+    margin: 40px 0 40px 0;
+    align-items: center;
+    border-radius: 0%;
+}
+.box-article {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+}
+.hotel{
+    margin-bottom: 20px;
+    background-color: white;
+}
+.note {
+    padding-bottom: 5px;
+}
+
+/*section les plus populaire*/
+.popu {
+    width: auto;
+    margin: 40px 0 40px 0;
+    border-radius: 0%;
+}
+.titre-populaire {
+    justify-content: space-between;
+    margin-right: -15%;
+}
+.fa-arrow-trend-up{
+    margin-left: 10px;
+}
+#note-au-coeur {
+    margin-top: 34%;
+}
+
+/*bloc activite*/
+.activite {
+    margin: 0 20px 40px 20px;
+}
+.box-activite {
+    flex-direction: column;
+}
+.simple {
+    width: auto;
+    margin-bottom: 20px;
+}
+.simple img {
+    height: 200px;
+}
+.grand {
+    height: -30%;
+}
+.double {
+    width: auto;
+}
+.haut-double {
+    margin-bottom: 0;
+}
+.box-activite h4 {
+    padding-bottom: 20px;
+}
+
+/*footer*/
+.footer {
+    flex-direction: column;
+    margin-left: auto;
+    width: 100%;
+}
 }
