@@ -398,16 +398,25 @@ nav ul {
 .bouton-recherche {
     display: none;
 }
+#champ-recherche {
+    width: 65%;
+}
+.bouton {
+    display: flex;
+}
 .loupe {
     display: contents;
     cursor: pointer;
+}
+.fa-location-dot {
+    padding-right: 16px;
 }
 .loupe i {
     background-color: #0065fc;
     font-size: 20px;
     text-align: center;
     color: white;
-    padding: 16px 20px 16px 20px;
+    padding: 16px 20px 16px 16px;
     border-radius: 0 20px 20px 0;
 }
 
@@ -418,7 +427,9 @@ nav ul {
 .bouton-filtre {
     flex-direction: column;
 }
-
+.bouton {
+    margin-bottom: 1%;
+}
 
 /*bloc hebergements - les plus populaires*/
 .heber-popu {
