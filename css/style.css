@@ -295,13 +295,15 @@ input::placeholder {
 }
 .info-popu {
     padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10px;
 }
 .info-popu  h4{
     margin-bottom: -5px;
 }
-.note-popu {
-    margin-top: 80px;
-}
+
 
 /*bloc activite*/
 .activite {
@@ -468,9 +470,6 @@ nav ul {
 }
 .fa-arrow-trend-up{
     margin-left: 10px;
-}
-#note-au-coeur {
-    margin-top: 29%;
 }
 
 /*bloc activite*/
