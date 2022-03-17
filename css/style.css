@@ -390,6 +390,15 @@ nav {
 nav ul {
     padding-left: 0;
 }
+nav a {
+    border-top: none;
+    border-bottom: #f2f2f2 solid;
+    margin-bottom: 15px;
+}
+nav a:hover {
+    border-top: none;
+    border-bottom: #0065fc solid;
+}
 
 /*main*/
 
@@ -435,7 +444,7 @@ nav ul {
 
 /*bloc hebergements - les plus populaires*/
 .heber-popu {
-    flex-direction: column;
+    flex-direction: column-reverse;
 }
 
 /*section hebergements*/
