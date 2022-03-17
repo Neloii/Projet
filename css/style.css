@@ -393,7 +393,7 @@ nav ul {
 nav a {
     border-top: none;
     border-bottom: #f2f2f2 solid;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 nav a:hover {
     border-top: none;
