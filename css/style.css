@@ -202,6 +202,10 @@ input::placeholder {
     width: 30%;
     margin: 20px 0 20px 0;
     background-color: white;
+    transition: 0.5s;
+}
+.box-article a:hover {
+    transform: scale(1.2);
 }
 .box-article article img {
     height: 140px;
@@ -282,6 +286,10 @@ input::placeholder {
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
+    transition: 00.5s;
+}
+.box-populaire a:hover {
+    transform: scale(1.2);
 }
 .hotel-popu {
     display: flex;
@@ -319,6 +327,10 @@ input::placeholder {
 }
 .simple {
     width: 24%;
+    transition: 00.5s;
+}
+.simple:hover {
+    transform: scale(1.1);
 }
 .double {
     width: 24%;
@@ -333,7 +345,11 @@ input::placeholder {
 }
 .box-activite a {
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
+    transition: 00.5s;
+}
+.box-activite a:hover {
+    transform: scale(1.2);
 }
 .grand {
     height: 97%;
