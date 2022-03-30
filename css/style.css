@@ -196,7 +196,6 @@ input::placeholder {
 }
 .box-article a {
     text-decoration: none;
-
     box-shadow: 2px 2px 5px #e2e2e2;
     border-radius: 20px;
     width: 30%;
@@ -475,6 +474,9 @@ nav a:hover {
     flex-direction: column;
     align-items: center;
 }
+.box-article a:hover {
+    transform: scale(1.00);
+}
 .hotel{
     margin-bottom: 20px;
     background-color: white;
@@ -493,6 +495,9 @@ nav a:hover {
     justify-content: space-between;
     margin-right: -15%;
 }
+.box-populaire a:hover {
+    transform: scale(1.00);
+}
 .fa-arrow-trend-up{
     margin-left: 10px;
 }
@@ -504,9 +509,15 @@ nav a:hover {
 .box-activite {
     flex-direction: column;
 }
+.box-activite a:hover {
+    transform: scale(1.00);
+}
 .simple {
     width: auto;
     margin-bottom: 20px;
+}
+.simple:hover {
+    transform: scale(1.00);
 }
 .simple img {
     height: 200px;
