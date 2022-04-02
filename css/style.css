@@ -239,9 +239,6 @@ input::placeholder {
     text-decoration: none;
     color: black;
 }
-.aff-plus a:hover {
-    color: #0065fc solid;
-}
 
 /*section les plus populaire*/
 .popu {
@@ -393,57 +390,11 @@ input::placeholder {
 }
 
 /*responsive*/
-@media all and (max-width : 1024px) {
+
+/*format tablette*/
+@media screen and (max-width: 992px) {
 body {
     width: auto;
-}
-
-/*header*/
-nav {
-    flex-direction: column;
-}
-nav ul {
-    padding-left: 0;
-}
-nav a {
-    border-top: none;
-    border-bottom: #f2f2f2 solid;
-    margin-bottom: 10px;
-}
-nav a:hover {
-    border-top: none;
-    border-bottom: #0065fc solid;
-}
-
-/*main*/
-
-/*barre de recherche*/
-.barre-recherche {
-    margin-left: 20px;
-}
-.bouton-recherche {
-    display: none;
-}
-#champ-recherche {
-    width: 65%;
-}
-.bouton {
-    display: flex;
-}
-.loupe {
-    display: contents;
-    cursor: pointer;
-}
-.fa-location-dot {
-    padding-right: 16px;
-}
-.loupe i {
-    background-color: #0065fc;
-    font-size: 20px;
-    text-align: center;
-    color: white;
-    padding: 16px 20px 16px 16px;
-    border-radius: 0 20px 20px 0;
 }
 
 /*barre de filtre*/
@@ -523,7 +474,7 @@ nav a:hover {
     height: 200px;
 }
 .grand {
-    height: -30%;
+    height: 30%;
 }
 .double {
     width: auto;
@@ -540,5 +491,57 @@ nav a:hover {
     flex-direction: column;
     margin-left: auto;
     width: 100%;
+}
+}
+
+/*format téléphone*/
+@media screen and (max-width: 768px) {
+
+/*header*/
+nav {
+    flex-direction: column;
+}
+nav ul {
+    padding-left: 0;
+}
+nav a {
+    border-top: none;
+    border-bottom: #f2f2f2 solid;
+    margin-bottom: 10px;
+}
+nav a:hover {
+    border-top: none;
+    border-bottom: #0065fc solid;
+}
+
+/*main*/
+
+/*barre de recherche*/
+.barre-recherche {
+    margin-left: 20px;
+}
+.bouton-recherche {
+    display: none;
+}
+#champ-recherche {
+    width: 65%;
+}
+.bouton {
+    display: flex;
+}
+.loupe {
+    display: contents;
+    cursor: pointer;
+}
+.fa-location-dot {
+    padding-right: 16px;
+}
+.loupe i {
+    background-color: #0065fc;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    padding: 16px 20px 16px 16px;
+    border-radius: 0 20px 20px 0;
 }
 }
